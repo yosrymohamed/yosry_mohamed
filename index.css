@@ -1,16 +1,10 @@
-/* 
-    variable
-*/
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
+
+
+/* container */
 
 .container {
     display: grid;
@@ -55,6 +49,12 @@ body {
     grid-area: Wwith;
 }
 
+
+/* end container */
+
+
+/* header  */
+
 header {
     display: flex;
     justify-content: center;
@@ -75,6 +75,7 @@ header ul li {
 
 header ul li a {
     text-decoration: none;
+    font-size: 20px;
     cursor: pointer;
     color: black;
     position: relative;
@@ -101,7 +102,7 @@ header ul li a::before {
 }
 
 header ul li a:hover {
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 
 header ul li a:hover::before {
@@ -111,6 +112,12 @@ header ul li a:hover::before {
 header ul li .before_a::before {
     background-color: white;
 }
+
+
+/* end header */
+
+
+/* text area */
 
 .text {
     display: flex;
@@ -141,6 +148,12 @@ header ul li .before_a::before {
     font-weight: 100;
 }
 
+
+/* end text area */
+
+
+/* my photo */
+
 .photo {
     width: 60%;
 }
@@ -158,6 +171,12 @@ header ul li .before_a::before {
     -ms-transition: 1s;
     -o-transition: 1s;
 }
+
+
+/* end my photo */
+
+
+/* btn my number  */
 
 .number {
     display: flex;
@@ -407,6 +426,12 @@ header ul li .before_a::before {
     }
 }
 
+
+/* end btn my number */
+
+
+/* title my work */
+
 .title_my_work {
     position: relative;
 }
@@ -423,6 +448,12 @@ header ul li .before_a::before {
     margin: 20px;
     font-size: 17px;
 }
+
+
+/* end title  */
+
+
+/*  my work  */
 
 .my_work {
     padding: 8px;
@@ -456,6 +487,12 @@ header ul li .before_a::before {
     -o-transform: perspective(250px) rotateZ(0.9deg) rotatex(2.8deg);
 }
 
+
+/* end my work */
+
+
+/* title skills */
+
 .title_work_with {
     position: relative;
 }
@@ -472,6 +509,12 @@ header ul li .before_a::before {
     font-size: 17px;
     margin: 10px;
 }
+
+
+/* end title skills */
+
+
+/* skills */
 
 .work_with {
     padding: 60px;
@@ -574,6 +617,12 @@ header ul li .before_a::before {
     color: black;
 }
 
+
+/* end skills */
+
+
+/* night mode  */
+
 .night_mode {
     position: absolute;
     bottom: 200px;
@@ -671,6 +720,12 @@ header ul li .before_a::before {
     outline: 0;
 }
 
+
+/* end night mode  */
+
+
+/*  btn social media */
+
 .social_media {
     position: absolute;
     top: 55%;
@@ -702,6 +757,12 @@ header ul li .before_a::before {
     font-size: 50px;
 }
 
+
+/* end btn SM */
+
+
+/* some change by java script */
+
 .background {
     background-color: black;
 }
@@ -724,6 +785,9 @@ header ul li .before_a::before {
     display: none;
     cursor: pointer;
 }
+
+
+/* end this  */
 
 
 /*   S phone  */
@@ -837,10 +901,10 @@ header ul li .before_a::before {
 
 @media screen and (min-width: 320px) and (max-width: 426px) {
     header ul li {
-        padding: 10px;
+        padding: 5px;
     }
-    header a {
-        font-size: 17px;
+    .header a {
+        font-size: 15px;
     }
     .container {
         grid-template-areas: "he he he he he he" "txt txt txt txt txt txt" "ph ph ph ph ph ph" "num num num num num num" "Twork Twork Twork Twork Twork Twork" "Mwork Mwork Mwork Mwork Mwork Mwork" "Twith Twith Twith Twith Twith Twith" "Wwith Wwith Wwith Wwith Wwith Wwith";
@@ -943,8 +1007,11 @@ header ul li .before_a::before {
 /*  tablet   */
 
 @media screen and (min-width: 426px) and (max-width: 769px) {
-    header a {
-        font-size: 25px;
+    .header a {
+        font-size: 20px;
+    }
+    header ul li {
+        padding: 10px;
     }
     .container {
         grid-template-areas: "he he he he he he" "txt txt txt txt txt txt" "ph ph ph ph ph ph" "num num num num num num" "Twork Twork Twork Twork Twork Twork" "Mwork Mwork Mwork Mwork Mwork Mwork" "Twith Twith Twith Twith Twith Twith" "Wwith Wwith Wwith Wwith Wwith Wwith";

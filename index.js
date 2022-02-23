@@ -28,7 +28,7 @@ function night_mode_f() {
     window.localStorage.setItem("check", "checked");
     night.setAttribute(window.localStorage.check, "");
     document.querySelector(".photo img").style.cssText =
-        `background-image: url("/static/img/black_photo.png");`;
+        `background-image: url("black_photo.png");`;
     document.querySelector(".number a").classList.add("my_num2");
     document.querySelector(".title_my_work").style.color = window.localStorage.getItem("White");
     document.querySelector(".title_work_with").style.color = window.localStorage.getItem("White");
@@ -62,7 +62,7 @@ function else_() {
     document.querySelector(".text").style.cssText = `color: ${window.localStorage.getItem("Black")} ;`;
     window.localStorage.removeItem("check")
     document.querySelector(".photo img").style.cssText =
-        `background-image: url("/static/img/white_photo.png") ;`;
+        `background-image: url("white_photo.png") ;`;
     document.querySelector(".number a").classList.remove("my_num2");
     document.querySelector(".title_my_work").style.color = window.localStorage.getItem("Black");
     document.querySelector(".title_work_with").style.color = window.localStorage.getItem("Black");
